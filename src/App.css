@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > div {
+    margin-right: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h2 {
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+    box-sizing: border-box;
+    min-width: 200px;
+    min-height: 350px;
+    margin: 15px;
+    display: flex;
+    text-decoration: none;
+    background-color: rgba(136, 134, 134, 0.38);
+    border-radius: 3%;
+    border: 2px solid rgba(0, 0, 0, 0.83);
+    padding: 8px;
+    color: white;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+.wrapperBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapperBox h3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btnBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.error {
+    border: solid 2px red;
+}
+
+.errorMessage {
+    color: #ec0b0b;
+}
+
+
+.active-filter {
+    background-color: rgba(250, 0, 0, 0.50);
+    border-radius: 5px;
 }
